@@ -111,6 +111,7 @@ main {
       main #get-columns-section .column h3::after {
         position: absolute;
         bottom: -5px;
+        left: -webkit-calc(50% - 4.4rem);
         left: calc(50% - 4.4rem);
         width: 140px;
         width: 8.8rem;
@@ -215,6 +216,7 @@ main {
     main #browse-section h2::after {
       position: absolute;
       bottom: -5px;
+      left: -webkit-calc(50% - 4.4rem);
       left: calc(50% - 4.4rem);
       width: 140px;
       width: 8.8rem;
@@ -232,13 +234,17 @@ main {
       margin-bottom: 80px;
       margin-bottom: 5rem; }
     main #browse-section #cuisines-wrapper {
+      display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       display: -webkit-flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -ms-flex-pack: center;
-          justify-content: center; }
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
       main #browse-section #cuisines-wrapper .cuisine-box {
         position: relative;
         width: 320px;
@@ -279,28 +285,41 @@ main {
           z-index: 0;
           width: 100%;
           height: 100%;
+          -webkit-transform: translateZ(0);
           transform: translateZ(0);
           box-shadow: 0 0 1px transparent;
+          -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
           -moz-osx-font-smoothing: grayscale;
+          -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+          -webkit-transition-property: -webkit-transform;
           transition-property: transform; }
       main #browse-section #cuisines-wrapper .cuisine-box a:hover img {
+        -webkit-transform: scale(0.95);
         -ms-transform: scale(0.95);
             transform: scale(0.95); }
     main #browse-section #stats-wrapper {
+      display: -webkit-flex;
+      display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       padding: 0 10%; }
       main #browse-section #stats-wrapper .stat {
-        -ms-flex: 1;
-            flex: 1;
-        -ms-flex-preferred-size: 200px;
-            flex-basis: 200px;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        -webkit-flex-basis: 200px;
+            -ms-flex-preferred-size: 200px;
+                flex-basis: 200px;
         font-family: Lato;
         font-size: 57px;
         font-size: 3.6rem;
@@ -337,7 +356,8 @@ footer {
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 2px;
-      transition: color 200ms; }
+      -webkit-transition: color 200ms;
+              transition: color 200ms; }
     footer #attrib a:hover {
       color: #4d4d4d; }
 
