@@ -250,6 +250,7 @@ main {
         }
         #cuisines-wrapper {
             display: flex;
+            display:-webkit-flex;
             flex-wrap: wrap;
             justify-content: center;
             
@@ -320,6 +321,7 @@ main {
         }
         
         #stats-wrapper {
+            display:-webkit-flex;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;

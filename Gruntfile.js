@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 		},
         concat: {
           css: {
-            src: ['css/vendor/normalize.css', 'css/style.css'],
+            src: ['css/style.css', 'css/vendor/normalize.css'],
             dest: 'css/concat.css'
           },
             options: {
