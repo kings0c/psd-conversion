@@ -24,7 +24,8 @@ module.exports = function(grunt) {
             dest: 'css/concat.css'
           },
             options: {
-                separator: "\n"
+                separator: "\n",
+                sourceMap: true
             }
         },
         cssmin: {
