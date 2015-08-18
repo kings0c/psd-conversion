@@ -61,8 +61,17 @@ module.exports = function(grunt) {
             dist: {
               src: 'css/style.css'
             }
-        }
+        },
+        pngmin: {
+            options: {
+              // Task-specific options go here. 
+            },
+            your_target: {
+              // Target-specific file lists and/or options go here. 
+            },
+          }
 	});
+    grunt.loadNpmTasks('grunt-pngmin');
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-jshint');
