@@ -1,17 +1,16 @@
 # PSD to Responsive Website Example
-Conversion of a PSD into a responsive website.
 
 I've converted a PSD design from behance.net into a responsive website.
 
 I've used `rem` units for font-sizes and some margins, and percentage widths on almost everything else which makes it easy to scale the document for smaller screens.
 
-In the work section, the design shows the two boxes side by side overlapping by a small square. I was able to achieve this by making the darker square a child of the larger and positioning it absolutely using `vw` units. This means that the boxes can grow in height for smaller screens and the square is still positioned correctly.
+The full screen image at the top was achieved using `vh` units to match the size to the viewport. Browser support for these is ok - they work in IE > 8 but have issues in Safari 6/7. if this were a production site I'd find some other way of achieving this (either `height: 100%` or a polyfill).
 
-The next light square below it "underlaps" the dark square so I set it's `z-index` accordingly. However to keep it positioned correctly at the base of the dark square I needed to use JavaScript to calculate the top margin.
+The next section has a standard 3 column layout. For smaller screens I used media queries to extend their width slightly and place the 3rd column below in the centre.
 
-I added a mobile nav menu with a "hamburger" icon for smaller screens using media queries, with a CSS transition on the max-height property of the `<nav>` so it doesn't look too jerky.
+In the next section (Introducing the Fudi App), I encountered a problem. As the image of the iPhone needs to be at the bottom of the parent `div`, I applied `position: absolute` to it. However as absolute positioning removes an element from the normal document flow, it's parent div no longer expanded to wrap around it. To get around this, rather than using JavaScript, I placed a copy of the same element behind it without `position: absolute` and set `visibility: hidden` on it.
 
-Under the About Creativs section, for large screens the text is in a 3 column layout which changes to 1 column with a larger width for small screens. Also the footer logos are on one line for large screens, changing to two for medium and below.
+For the Cuisines section near the bottom I opted to use flexbox. Again if this was a production site I'd be more hesitant as browser support for this isn't great at the moment.
 
 I used SCSS for this project so check the source on GitHub rather than the page stylesheet (though source maps are enabled).
 
