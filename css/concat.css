@@ -1,5 +1,4 @@
-html,
-body {
+html {
   font-size: 10px; }
 
 nav {
@@ -15,6 +14,8 @@ nav {
       width: 100%;
       height: 100%; }
       nav #logo-wrapper a img {
+        width: 69px;
+        height: 59px;
         margin-top: 20px; }
   nav #nav-links {
     display: table;
@@ -25,7 +26,7 @@ nav {
       list-style: none;
       vertical-align: middle; }
       nav #nav-links ul li:not(:last-child) {
-        margin-right: 48px;
+        margin-right: 30px;
         margin-right: 3rem; }
       nav #nav-links ul li {
         display: inline-block; }
@@ -34,7 +35,7 @@ nav {
           text-decoration: none;
           text-transform: uppercase;
           font-weight: 700;
-          font-size: 22px;
+          font-size: 14px;
           font-size: 1.4rem;
           font-family: Lato; }
 
@@ -57,27 +58,27 @@ main {
       display: table-cell;
       vertical-align: middle; }
       main #top-section #top-section-content h1 {
-        margin: 0 0 64px 0;
+        margin: 0 0 40px 0;
         margin: 0 0 4rem 0;
         color: #ffffff;
         text-align: center;
         font-weight: 700;
         font-style: italic;
-        font-size: 57px;
+        font-size: 36px;
         font-size: 3.6rem;
         font-family: 'Times New Roman'; }
         main #top-section #top-section-content h1 span {
           text-transform: uppercase;
           font-weight: 700;
           font-style: normal;
-          font-size: 160px;
+          font-size: 100px;
           font-size: 10rem;
           font-family: Lato; }
       main #top-section #top-section-content #cta-button-wrapper {
         height: 75px;
         text-align: center; }
         main #top-section #top-section-content #cta-button-wrapper .cta-button {
-          padding: 40px 128px;
+          padding: 25px 80px;
           padding: 2.5rem 8rem;
           border: 3px solid #ffffff;
           border-radius: 3px;
@@ -85,7 +86,7 @@ main {
           text-decoration: none;
           text-transform: uppercase;
           font-weight: 700;
-          font-size: 25px;
+          font-size: 16px;
           font-size: 1.6rem;
           font-family: Lato;
           -webkit-transition: background-color 200ms;
@@ -94,13 +95,13 @@ main {
           background: #969696;
           background: rgba(150, 150, 150, 0.5); }
       main #top-section #top-section-content p {
-        margin-top: 16px;
+        margin-top: 10px;
         margin-top: 1rem;
         color: #ffffff;
         text-align: center;
         text-transform: uppercase;
         font-weight: 400;
-        font-size: 22px;
+        font-size: 14px;
         font-size: 1.4rem;
         font-family: Lato; }
         main #top-section #top-section-content p .bold-underline {
@@ -109,14 +110,14 @@ main {
           color: #ffffff; }
   main #get-columns-section {
     overflow: hidden;
-    padding: 160px 10%;
+    padding: 100px 10%;
     padding: 10rem 10%; }
     main #get-columns-section .column {
       float: left;
       width: 22.5%;
       color: #000000;
       text-align: center;
-      font-size: 25px;
+      font-size: 16px;
       font-size: 1.6rem;
       font-family: Lato; }
       main #get-columns-section .column h3::after {
@@ -124,7 +125,7 @@ main {
         bottom: -5px;
         left: -webkit-calc(50% - 4.4rem);
         left: calc(50% - 4.4rem);
-        width: 140px;
+        width: 88px;
         width: 8.8rem;
         height: 1px;
         background: #f48277;
@@ -139,7 +140,7 @@ main {
         position: relative;
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 28px;
+        font-size: 18px;
         font-size: 1.8rem; }
       main #get-columns-section .column p {
         font-weight: 300; }
@@ -148,7 +149,7 @@ main {
   main #fudi-app-section {
     position: relative;
     overflow: hidden;
-    padding: 160px 10% 0 10%;
+    padding: 100px 10% 0 10%;
     padding: 10rem 10% 0 10%;
     background: #f5f5f5; }
     main #fudi-app-section #app-left {
@@ -165,7 +166,7 @@ main {
     main #fudi-app-section #app-hidden {
       visibility: hidden;
       float: left;
-      margin: 80px 10% 0 0;
+      margin: 50px 10% 0 0;
       margin: 5rem 10% 0 0;
       width: 45%; }
       main #fudi-app-section #app-hidden img {
@@ -176,14 +177,14 @@ main {
         height: auto; }
     main #fudi-app-section #app-right {
       float: left;
-      margin: 0 0 80px 0;
+      margin: 0 0 50px 0;
       margin: 0 0 5rem 0;
       width: 45%; }
       main #fudi-app-section #app-right h2::after {
         position: absolute;
         bottom: -5px;
         left: 0;
-        width: 140px;
+        width: 88px;
         width: 8.8rem;
         height: 1px;
         background: #f48277;
@@ -192,12 +193,12 @@ main {
         position: relative;
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 28px;
+        font-size: 18px;
         font-size: 1.8rem;
         font-family: Lato; }
       main #fudi-app-section #app-right p {
         font-weight: 300;
-        font-size: 25px;
+        font-size: 16px;
         font-size: 1.6rem;
         font-family: Lato; }
   main #testimonial-section {
@@ -216,20 +217,20 @@ main {
         font-family: Lato;
         line-height: 36px; }
         main #testimonial-section #testimonial-section-inner blockquote q {
-          font-size: 48px;
+          font-size: 30px;
           font-size: 3rem; }
         main #testimonial-section #testimonial-section-inner blockquote .quote-attribution {
-          font-size: 28px;
+          font-size: 18px;
           font-size: 1.8rem; }
   main #browse-section {
-    padding: 160px 0 0 0;
+    padding: 100px 0 0 0;
     padding: 10rem 0 0 0; }
     main #browse-section h2::after {
       position: absolute;
       bottom: -5px;
       left: -webkit-calc(50% - 4.4rem);
       left: calc(50% - 4.4rem);
-      width: 140px;
+      width: 88px;
       width: 8.8rem;
       height: 1px;
       background: #f48277;
@@ -239,10 +240,10 @@ main {
       text-align: center;
       text-transform: uppercase;
       font-weight: 700;
-      font-size: 28px;
+      font-size: 18px;
       font-size: 1.8rem;
       font-family: Lato;
-      margin-bottom: 80px;
+      margin-bottom: 50px;
       margin-bottom: 5rem; }
     main #browse-section #cuisines-wrapper {
       display: -webkit-box;
@@ -276,7 +277,7 @@ main {
             text-shadow: 0px 1px 3px rgba(1, 1, 1, 0.55);
             font-weight: 700;
             font-style: italic;
-            font-size: 28px;
+            font-size: 18px;
             font-size: 1.8rem;
             font-family: 'Times New Roman'; }
           main #browse-section #cuisines-wrapper .cuisine-box .text-wrapper h4 {
@@ -286,7 +287,7 @@ main {
             text-transform: uppercase;
             text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
             font-weight: 700;
-            font-size: 67px;
+            font-size: 42px;
             font-size: 4.2rem;
             font-family: Lato; }
         main #browse-section #cuisines-wrapper .cuisine-box img {
@@ -332,34 +333,34 @@ main {
             -ms-flex-preferred-size: 200px;
                 flex-basis: 200px;
         font-family: Lato;
-        font-size: 57px;
+        font-size: 36px;
         font-size: 3.6rem;
         font-weight: 700;
         text-align: center;
-        line-height: 40px;
+        line-height: 25px;
         line-height: 2.5rem; }
         main #browse-section #stats-wrapper .stat span {
-          font-size: 25px;
+          font-size: 16px;
           font-size: 1.6rem;
           font-weight: 300; }
 
 footer {
   background: #f5f5f5;
-  padding: 80px 10%;
+  padding: 50px 10%;
   padding: 5rem 10%;
   overflow: hidden;
   margin-top: -100px; }
   footer #copyright {
     float: left;
     font-family: Lato;
-    font-size: 22px;
+    font-size: 14px;
     font-size: 1.4rem;
     font-weight: 300;
     color: rgba(139, 139, 139, 0.5); }
   footer #attrib {
     float: right;
     color: #8b8b8b;
-    font: 300 22px Lato;
+    font: 300 14px Lato;
     font: 300 1.4rem Lato; }
     footer #attrib a {
       color: #000000;
@@ -385,11 +386,22 @@ footer {
     margin: 0 29% !important; } }
 /* Tiny */
 @media screen and (max-width: 570px) {
+  html {
+    font-size: 8px; }
+
+  #logo-wrapper a img {
+    width: 49px !important;
+    height: auto !important;
+    margin-top: 25px !important; }
+
+  main #top-section #top-section-content h1 span {
+    font-size: 8rem; }
+
   footer #copyright,
   footer #attrib {
-    float: none;
-    display: block;
-    text-align: center; } }
+    float: none !important;
+    display: block !important;
+    text-align: center !important; } }
 
 /* */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
